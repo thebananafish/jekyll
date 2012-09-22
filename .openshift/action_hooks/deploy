@@ -12,3 +12,5 @@ source $OPENSHIFT_DATA_DIR/.rvm/scripts/rvm
 cd $OPENSHIFT_REPO_DIR
 bundle
 
+# run jekyll to generate site
+jekyll

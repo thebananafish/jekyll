@@ -4,7 +4,7 @@
 # $OPENSHIFT_INTERNAL_IP:8080
 
 # replace the $OPENSHIFT_INTERNAL_IP and $OPENSHIFT_INTERNAL_PORT before starting up the server
-nohup $OPENSHIFT_RUNTIME_DIR/sbin/nginx > $OPENSHIFT_LOG_DIR/server.log 2>&1 &
+#nohup $OPENSHIFT_RUNTIME_DIR/sbin/nginx > $OPENSHIFT_LOG_DIR/server.log 2>&1 &
 
 # this will spawn a sub-shell, so make sure we can use rvm
 source $OPENSHIFT_DATA_DIR/.rvm/scripts/rvm

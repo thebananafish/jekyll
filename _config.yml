@@ -1,0 +1,16 @@
+# Site Variables
+url: http://yoursite.com
+title: Your Site
+tagline: Site Tagline
+google_analytics_tracking_id: XX-XXXXXXX-X
+author :
+    name : Name Lastname
+    email : blah@email.test
+
+# Site Config
+permalink: /:year/:month/:day/:title
+paginate: 10
+
+# Build Config
+exclude: ['_site', 'Gemfile', 'Gemfile.lock', 'Procfile', 'unicorn.rb', 'config.ru', 'README.md', 'vendor']
+pygments: true

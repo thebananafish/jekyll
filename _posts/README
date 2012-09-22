@@ -1,0 +1,16 @@
+To add a post use the file name structure like
+
+2012-07-21-example-post.md
+YYYY-MM-DD-title-of-post.md
+
+Content of the file looks like
+
+---
+layout: post
+title: Example post
+---
+
+{{ page.title }}
+================
+
+This is an example post

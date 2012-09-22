@@ -2,6 +2,6 @@
 # The logic to stop your application should be put in this script.
 
 # kill the server through the pidfile
-kill `cat $OPENSHIFT_REPO_DIR/appname/tmp/pids/unicorn.pid`
+kill `cat $OPENSHIFT_REPO_DIR/tmp/pids/unicorn.pid`
 
 exit 0

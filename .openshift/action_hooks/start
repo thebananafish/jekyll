@@ -4,7 +4,6 @@
 # $OPENSHIFT_INTERNAL_IP:8080
 
 # replace the $OPENSHIFT_INTERNAL_IP and $OPENSHIFT_INTERNAL_PORT before starting up the server
-sed -e "s/<code>echo &#039;$OPENSHIFT_IP:$OPENSHIFT_PORT&#039;</code>/<code>echo $OPENSHIFT_INTERNAL_IP:$OPENSHIFT_INTERNAL_PORT</code>/" $OPENSHIFT_RUNTIME_DIR/conf/nginx.conf.template > $OPENSHIFT_RUNTIME_DIR/conf/nginx.conf
 nohup $OPENSHIFT_RUNTIME_DIR/sbin/nginx > $OPENSHIFT_LOG_DIR/server.log 2>&1 &
 
 # this will spawn a sub-shell, so make sure we can use rvm
@@ -15,4 +14,4 @@ cd $OPENSHIFT_REPO_DIR
 
 # start the unicorn server on the internal ip and port
 #bundle exec unicorn -o $OPENSHIFT_INTERNAL_IP -p $OPENSHIFT_INTERNAL_PORT -c unicorn.rb 
-bundle exec unicorn_rails -c unicorn.rb
+bundle exec unicorn_rails -c unicorn.rb &

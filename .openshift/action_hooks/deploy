@@ -3,3 +3,12 @@
 # build hook has been run but before the application has been started back
 # up again.  This script gets executed directly, so it could be python, php,
 # ruby, etc.
+
+
+# this will spawn a sub-shell, so make sure we can use rvm
+source $OPENSHIFT_DATA_DIR/.rvm/scripts/rvm
+
+# make sure our bundle is up to date
+cd $OPENSHIFT_REPO_DIR
+bundle
+

@@ -12,5 +12,6 @@ permalink: /:year/:month/:day/:title
 paginate: 10
 
 # Build Config
-exclude: ['_site', 'Gemfile', 'Gemfile.lock', 'Procfile', 'unicorn.rb', 'config.ru', 'README.md', 'vendor']
+source: src
+destination: site
 pygments: true

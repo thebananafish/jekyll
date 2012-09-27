@@ -1,3 +1,8 @@
+# Heroku Instructions
+
+coming soon
+
+# Openshift Instructions
 http://pyramidthoughts.wordpress.com/2012/04/14/install-and-run-rvm-and-ruby-1-9-x-on-red-hat-openshift/
 
 ## 1. Create a DIY application

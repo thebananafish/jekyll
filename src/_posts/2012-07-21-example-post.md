@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Example post
+comments: true
 ---
 
 {{ page.title }}

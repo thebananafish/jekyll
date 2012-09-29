@@ -1,17 +1,30 @@
-# Site Variables
+# -----------------------
+# Main Configs      
+# -----------------------
 url: http://yoursite.com
 title: Your Site
 tagline: Site Tagline
-google_analytics_tracking_id: XX-XXXXXXX-X
 author :
     name : Name Lastname
     email : blah@email.test
 
-# Site Config
+# -----------------------
+# Jekyll Config          
+# -----------------------
 permalink: /:year/:month/:day/:title
 paginate: 10
-
-# Build Config
 source: src
 destination: site
+paginate: 10
 pygments: true
+
+# -----------------------
+# 3rd Party Settings
+# -----------------------
+
+# Google Analytics
+google_analytics_tracking_id:
+
+# Disqus Comments
+disqus_short_name:
+disqus_show_comment_count: false

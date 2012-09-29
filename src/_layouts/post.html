@@ -24,6 +24,10 @@ layout: default
                 {% endif %}
             </ul>
         </div>
+        
+		{% if site.disqus_short_name and page.comments == true %}
+			{% include disqus/embed.html %}
+		{% endif %}        
         <hr>
     </div>
 

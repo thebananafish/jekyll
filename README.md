@@ -1,16 +1,21 @@
-# Heroku Instructions
-
-coming soon
-
 # Openshift Instructions
-http://pyramidthoughts.wordpress.com/2012/04/14/install-and-run-rvm-and-ruby-1-9-x-on-red-hat-openshift/
 
-## 1. Create a DIY application
+## 1. Create a ruby 1.9 app
 
-## 2. Download and install ruby
+## 2.  Clone this repo
 
-ssh into the server and then run
+## 3.  Clone the app repo from openshift
 
-	cd $OPENSHIFT_DATA_DIR
-	curl -L https://raw.github.com/xiy/rvm-openshift/master/binscripts/install-rvm-openshift.sh | bash -s
+## 4.  Copy contents of this github repo into the openshift repo
 
+## 5. Deploy
+```
+bundle install --deployment
+jekyll build
+git add --all
+git commit -m 'first'
+git push
+```
+
+
+note added `.openshift/markers/force_clean_build` otherwise we cannot add content to the jekyll site
